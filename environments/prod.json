@@ -1,6 +1,6 @@
 {
-    "name": "example",
-    "description": "This is an example environment defined as JSON",
+    "name": "prod",
+    "description": "The gentle production environment",
     "chef_type": "environment",
     "json_class": "Chef::Environment",
     "default_attributes": {
@@ -8,6 +8,7 @@
     "override_attributes": {
     },
     "cookbook_versions": {
-        "example": "= 1.0.0"
+        "mytomcat": "= 0.1.1",
+        "nginx": "= 0.1.1"
     }
 }
