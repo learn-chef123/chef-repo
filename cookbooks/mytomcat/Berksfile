@@ -1,0 +1,4 @@
+source 'https://supermarket.chef.io'
+
+metadata
+cookbook 'my_java', path: '../my_java'

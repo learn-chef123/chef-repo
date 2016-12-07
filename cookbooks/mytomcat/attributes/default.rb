@@ -1,0 +1,5 @@
+default['tomcat']['user'] = 'tomcat'
+default['tomcat']['group'] = 'tomcat'
+default['tomcat']['appName'] = 'my_app'
+#default['tomcat']['install_path'] = '/opt/mount1'
+default['tomcat']['version'] = '8.0.36'

@@ -1,0 +1,18 @@
+{
+    "name": "web",
+    "description": "my web server",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+    },
+    "override_attributes": {
+      "nginx": {
+        "name": "okram999.tk"
+      }
+    },
+    "run_list": [
+        "recipe[chef-client::default]",
+        "recipe[mytomcat::default]",
+        "recipe[nginx::default]"
+    ]
+}
