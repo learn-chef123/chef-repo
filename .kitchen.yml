@@ -1,0 +1,27 @@
+#experimental kitchen file
+---
+driver:
+  name: vagrant
+  network:
+      - ["private_network", {ip: "192.168.43.43"}]
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: centos-6.7
+
+suites:
+  - name: default
+    run_list:
+      - recipe[mytomcat::default]
+      - recipe[nginx::default]
+    verifier:
+      inspec_tests:
+        - test/recipes
+    attributes:
+       nginx:
+         name: 'kitchen_node'

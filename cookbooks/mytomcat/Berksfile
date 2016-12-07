@@ -1,4 +1,4 @@
 source 'https://supermarket.chef.io'
 
 metadata
-cookbook 'my_java', path: '../my_java'
+cookbook 'my_java', "~>0.1.0", path: '../my_java'
